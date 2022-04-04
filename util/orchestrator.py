@@ -33,6 +33,6 @@ def shoot_multiprocessing():
     '''
     Запуск метода, используя multiprocessing
     '''
-    pool = multiprocessing.Pool(processes=7)
+    pool = multiprocessing.Pool(processes=8)
     pool.map(sh.shoot_func, np.arange(conts.ALFAS_INCREMENT, conts.ALFAS_COUNT, conts.ALFAS_INCREMENT))
     pool.terminate()
